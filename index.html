@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Ayaan Shah</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(145deg, #6a82fb, #fc5c7d); /* Soft gradient */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Login Panel */
+        .login-panel {
+            background-color: white;
+            padding: 40px 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .login-panel h2 {
+            margin-bottom: 25px;
+            color: #333;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .login-panel input {
+            width: 100%;
+            padding: 14px;
+            margin: 12px 0;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background-color: #f8f8f8;
+        }
+
+        .login-panel input:focus {
+            border-color: #fc5c7d;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(252, 92, 125, 0.5);
+            outline: none;
+        }
+
+        .login-panel button {
+            width: 100%;
+            padding: 14px;
+            background-color: #6a82fb;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-panel button:hover {
+            background-color: #5c74e8;
+        }
+
+        .login-panel p {
+            color: #e74c3c;
+            font-size: 14px;
+            display: none;
+            margin-top: 15px;
+        }
+
+        .login-panel .link {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #6a82fb;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .login-panel .link:hover {
+            color: #5c74e8;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Tool Download Panel */
+        .container {
+            display: none;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .container li {
+            margin: 15px 0;
+        }
+
+        .container a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #6a82fb;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .container a:hover {
+            color: #5c74e8;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Login Panel -->
+    <div class="login-panel" id="loginPanel">
+        <h2>Login to Access</h2>
+        <input type="text" id="username" placeholder="Username" />
+        <input type="password" id="password" placeholder="Password" />
+        <button onclick="login()">Login</button>
+        <p id="error">Invalid username or password.</p>
+        <a href="#" class="link">Forgot password?</a>
+    </div>
+
+    <!-- Tool Download Panel (Initially Hidden) -->
+    <div class="container" id="downloadPanel">
+        <h1>
+        Access Panel</h1>
+        <p>Click the links below to access the tools:</p>
+        <ul>
+            <li><a href="https://docs.google.com/spreadsheets/d/1cAKNVLS0AzRwMUP12dQPTe5bmELalikSC85zoBYaaZM/edit?gid=1153181158#gid=1153181158" target="_blank">Ayaan office sheet</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/15qqBpUqS2WRpOUiSgL08Jfy3KGLV76OOh4NkGI3ulEU/edit?gid=565554749#gid=565554749" target="_blank">Sonjoy office sheet</a></li>
+            <li><a href="http://raavan.run.place/" target="_blank">RaavanMailer</a></li>
+            <li><a href="https://www.filepuma.com/" target="_blank"> PC software download site </a></li>
+           <li><a href="https://tinywow.com/" target="_blank">online tools</a></li>
+            <li><a href="http://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/en-US/O365ProPlusRetail.img" target="_blank">Office365</a></li>
+           <li><a href="https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/ProPlus2021Retail.img" target="_blank">Office 2021</a></li>
+           <li><a href="https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/en-US/ProfessionalRetail.img" target="_blank">Office 2016</a></li>
+
+
+
+        </ul>
+    </div>
+
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var error = document.getElementById("error");
+
+            if (username === "Ayaan" && password === "Ay@@n@li2008") {
+                // Hide login panel, show download panel
+                document.getElementById("loginPanel").style.display = "none";
+                document.getElementById("downloadPanel").style.display = "block";
+            } else {
+                // Show error message
+                error.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
